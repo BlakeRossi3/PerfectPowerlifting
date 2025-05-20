@@ -16,14 +16,15 @@ export const programs = [
     category: 'powerlifting',
     level: 'intermediate',
     duration: '14 weeks',
-    sheetId: '1zSY8F_8iP76i_byoMP5xKKwdU73ifqr3L-kDOeOfyV8'
+    sheetId: '1zSY8F_8iP76i_byoMP5xKKwdU73ifqr3L-kDOeOfyV8',
+    isComingSoon: false
   },
   {
     slug: 'hypertrophy-blueprint',
     title: 'Hypertrophy Blueprint',
     image: '/programs/hypertrophyBlueprint.png',
-    price: 30,
-    stripePriceId: 'price_1RP4mPQmrQT6voJsXxEXaSKL',
+    price: "Coming soon", // changed
+    stripePriceId: '',
     description: [
       'Focused training for measurable growth',
       'Includes progression tracking',
@@ -33,9 +34,10 @@ export const programs = [
     category: 'bodybuilding',
     level: 'intermediate',
     duration: '8 weeks',
-    sheetId: 'actual_google_sheet_id_here'
+    sheetId: '',
+    isComingSoon: true
   },
-   {
+  {
     slug: 'advanced-powerlifting',
     title: 'Advanced Powerlifting Program',
     image: '/programs/advanced.png',
@@ -50,14 +52,15 @@ export const programs = [
     category: 'powerlifting',
     level: 'advanced',
     duration: '10 weeks',
-    sheetId: '1WrGGn0aaiapP3NzejVvLSp6om_C7bFdl-6UdU9kxr0Q'
+    sheetId: '1WrGGn0aaiapP3NzejVvLSp6om_C7bFdl-6UdU9kxr0Q',
+    isComingSoon: false
   },
   {
     slug: 'perfect-strength-size',
     title: 'Standard Strength and Size Program',
     image: '/programs/perfectStrengthSize.png',
-    price: 30,
-    stripePriceId: 'price_1RP4moQmrQT6voJs5B5FUa1e',
+    price: "Coming soon", // changed
+    stripePriceId: '',
     description: [
       'Balanced program for lifestyle lifters',
       'Strength progression with hypertrophy support',
@@ -67,7 +70,8 @@ export const programs = [
     category: 'bodybuilding',
     level: 'general',
     duration: '8 weeks',
-    sheetId: 'actual_google_sheet_id_here'
+    sheetId: '',
+    isComingSoon: true
   },
   {
     slug: 'beginner-powerlifting',
@@ -84,14 +88,14 @@ export const programs = [
     category: 'powerlifting',
     level: 'beginner',
     duration: '8 weeks',
-    sheetId: '1rt8hgkVNesX6y_J5yb4qBOlNkQlzWU4hDlnfDcKh1ME'
-
+    sheetId: '1rt8hgkVNesX6y_J5yb4qBOlNkQlzWU4hDlnfDcKh1ME',
+    isComingSoon: false
   },
   {
     slug: 'emergency-peak',
     title: 'Emergency 5 Week Peak Program',
     image: '/programs/emergencyPeak.png',
-    price: 20,
+    price: "Coming soon", // changed
     stripePriceId: 'price_1RP4kwQmrQT6voJs2oFdYoZx',
     description: [
       'Focused training for measurable growth',
@@ -102,6 +106,7 @@ export const programs = [
     category: 'powerlifting',
     level: 'beginner-advanced',
     duration: '5 weeks',
-    sheetId: 'actual_google_sheet_id_here'
+    sheetId: '',
+    isComingSoon: true
   }
 ];

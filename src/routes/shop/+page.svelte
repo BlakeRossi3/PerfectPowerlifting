@@ -104,13 +104,35 @@ function selectCategory(category: 'powerlifting' | 'bodybuilding') {
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       {#each getPrograms(selectedCategory) as program}
-        <a href={program.link} class="relative group overflow-hidden rounded-lg shadow-md">
-          <img src={program.image} alt="Program" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
-          <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-            <span class="text-white text-2xl font-semibold">{program.price}</span>
+      <div
+        class="relative group overflow-hidden rounded-lg shadow-md"
+        class:opacity-70={program.price === 'Coming soon'}
+      >
+        <img
+          src={program.image}
+          alt="Program"
+          class="w-full h-full object-cover transition-transform duration-300 {program.price !== 'Coming soon' ? 'group-hover:scale-105' : ''}"
+        />
+
+        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+          <span class="text-white text-2xl font-semibold">{program.price}</span>
+        </div>
+
+        {#if program.price !== 'Coming soon'}
+          <a
+            href={program.link}
+            class="absolute inset-0"
+            aria-label="View program"
+          ></a>
+        {/if}
+        {#if program.price === 'Coming soon'}
+          <div class="absolute bottom-0 left-0 right-0 bg-black/70 text-white text-center py-2 text-sm font-semibold">
+            Coming Soon
           </div>
-        </a>
-      {/each}
+        {/if}
+      </div>
+    {/each}
+
     </div>
   </div>
 {/if}

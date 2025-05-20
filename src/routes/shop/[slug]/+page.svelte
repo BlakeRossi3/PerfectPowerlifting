@@ -4,6 +4,7 @@
   import { addToCart } from '$lib/stores/cart';
   import { onMount } from 'svelte';
   import { programs } from '$lib/data/programs';
+  import { error } from '@sveltejs/kit';
 
   // 👇 Use typeof to infer the shape of a single program
   type Program = (typeof programs)[number];
@@ -14,7 +15,16 @@
     const slug = $page.params.slug;
     program = getProgramBySlug(slug);
   });
-</script>
+
+  export function load({ params }) {
+  const program = getProgramBySlug(params.slug);
+
+  if (!program) {
+    throw error(404, 'Program not found');
+  }
+
+  return { program };
+}</script>
 
 {#if program}
   <div class="max-w-4xl mx-auto py-12 px-4 flex flex-col md:flex-row gap-10">
