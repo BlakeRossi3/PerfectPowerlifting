@@ -12,7 +12,7 @@ export const testimonials = [
   },
   {
     name: 'Chase B.',
-    quote: 'The progression structure kept me motivated and healthy. I hit PRs across the board without burnout.',
+    quote: 'Perfect Powerlifting has made me a better lifter. Blake uses modern, evidence-based training methods and is always experimenting with new approaches and structures to keep pushing his athletes to the next level. It’s clear how much effort and care he puts into every detail of our programming and progress.',
     image: '/lifting/chaseDeadlift.jpg',
     stats: {
       squat: '452 lbs',
