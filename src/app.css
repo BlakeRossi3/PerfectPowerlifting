@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: 'Avenir Heavy';
+  src: url('/fonts/Avenir Heavy.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: 'Avenir Heavy', sans-serif;
+}
+
