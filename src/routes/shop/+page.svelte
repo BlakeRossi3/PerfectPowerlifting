@@ -16,15 +16,15 @@
   let hasVisited = false;
 
   onMount(() => {
-    if (!hasVisited) {
-      // Only show the video once per visit
-      videoEnded = false;
-      hasVisited = true;
-    } else {
-      // Skip video on internal re-entry
-      videoEnded = true;
-    }
-  });
+  const hasVisited = sessionStorage.getItem('hasVisitedShop');
+
+  if (hasVisited) {
+    videoEnded = true;
+  } else {
+    videoEnded = false;
+    sessionStorage.setItem('hasVisitedShop', 'true');
+  }
+});
 
 function handleVideoEnd() {
   videoEnded = true;

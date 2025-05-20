@@ -44,10 +44,12 @@ export const programs = [
     price: 30,
     stripePriceId: 'price_1RP4jqQmrQT6voJsUfkfCVcq',
     description: [
-      '10-week block designed for experienced lifters',
-      'Heavy emphasis on fatigue management',
-      'Customizable accessories',
-      'Built for 3+ years of training experience'
+      '10-week block built for lifters with 3+ years of consistent training',
+      'Master training "in the pocket" — precise, focused, and fatigue-aware',
+      'Accessories are chosen specifically to blow up your squat, bench, and deadlift',
+      'Includes RPE-based training',
+      'Autoregulated structure — no deloads, just smart adjustments',
+      'Choose your own SBD variations for strategic overload'
     ],
     category: 'powerlifting',
     level: 'advanced',
@@ -80,10 +82,11 @@ export const programs = [
     price: 30,
     stripePriceId: 'price_1RP4lVQmrQT6voJsP2QDtMN9',
     description: [
-      'Focused training for measurable growth',
-      'Includes progression tracking',
-      '8-week hypertrophy phase',
-      'Optimized for size and volume'
+      '12-week powerlifting foundation for new lifters',
+      'Teaches proper technique and weekly structure for squat, bench, and deadlift',
+      'Progressive overload and simple autoregulation concepts built-in',
+      'Flexible accessories based on available equipment',
+      'Ideal for lifters starting their first structured strength program'
     ],
     category: 'powerlifting',
     level: 'beginner',

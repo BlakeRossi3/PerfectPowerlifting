@@ -32,7 +32,6 @@
 
    <CartDrawer />
 </nav>
-
   
   
 <slot /> <!-- This renders the content of each route -->

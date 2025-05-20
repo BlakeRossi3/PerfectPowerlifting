@@ -41,7 +41,7 @@
   <!-- Value props -->
   <div class="flex items-center">
     <ul class="text-xl leading-relaxed space-y-6">
-      <li class="text-3xl font-bold text-black mb-12">We do what works — no fluff, no BS.</li>
+      <li class="text-3xl font-bold text-black mb-12">Be Perfect. Build strength that lasts.</li>
       <li class="flex items-start gap-3">
         <img src="/lettermark-blackgold.png" class="w-5 h-5 mt-1" alt="Check" />
         <span>For <strong>beginners through advanced</strong> lifters — we meet you where you’re at</span>
@@ -67,10 +67,17 @@
 
   <!-- Philosophy blurb -->
   <div class="flex items-center text-gray-700">
-    <p class="text-xl leading-relaxed max-w-xl mx-auto">
-      Perfect Powerlifting isn’t just another program — it’s a streamlined training system built for results. We focus on what actually works, cutting out the trends, gimmicks, and unnecessary complexity. Every plan is designed to be sustainable and enjoyable, with built-in flexibility that lets you choose your accessory movements — so you stay motivated, avoid burnout, and keep making progress.
-
-    </p>
+    <div class="flex flex-col gap-6 text-xl leading-relaxed max-w-xl mx-auto">
+  <p>
+    Perfect Powerlifting exists to give aspiring lifters the structure they need, the flexibility they want, and the education they’ve been missing.
+  </p>
+  <p>
+    Our programs are affordable, adaptable, and built to actually make you better — not just stronger. Every plan is designed to teach you how to train with intention, manage your variables, and understand the “why” behind the work.
+  </p>
+  <p>
+    No gimmicks. Just focused programming that evolves with you. Stop guessing. Start progressing.
+  </p>
+</div>
   </div>
 
   <!-- Carousel preview -->
